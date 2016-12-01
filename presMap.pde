@@ -60,15 +60,15 @@ boolean auto=true;
 int counter=26;
 int timer=0;
 int year;
-PFont font;
+//PFont font;
 color red=color(195, 55, 77);
 color blue=color(50, 74, 139);
 
 void setup() {
   size(1000, 830);
   frameRate(30);
-  font=loadFont("SegoeUI-75.vlw");
-  textFont(font);  
+  //font=loadFont("SegoeUI-75.vlw");
+  //textFont(font);  
   
   play=loadImage("play.png");
   pause=loadImage("pause.png");
