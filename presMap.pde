@@ -81,7 +81,7 @@ void setup() {
 
 void draw() {
    fill(255,132,25);
-   ellipse((int)random(0,800),(int)random(0,630),200,200);
+   ellipse(mouseX,mouseY,50,50);
   if(auto)
     timer();
   else
