@@ -80,7 +80,8 @@ void setup() {
 }
 
 void draw() {
-   
+   fill(255,132,25);
+   ellipse(200,200,200,200);
   if(auto)
     timer();
   else
