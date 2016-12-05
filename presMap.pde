@@ -80,14 +80,17 @@ void setup() {
 }
 
 void draw() {
-   fill(255,132,25);
+   fill(255,0,0);
    ellipse(mouseX,mouseY,50,50);
   if(auto)
     timer();
   else
     slider();
-
+  fill(0,255,0);
+   ellipse(mouseX,mouseY,50,50);
   drawMap(); 
+  fill(0,0,255);
+   ellipse(mouseX,mouseY,50,50);
 }
 
 public void timer(){
