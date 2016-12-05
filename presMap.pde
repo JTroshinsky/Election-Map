@@ -67,8 +67,8 @@ color blue=color(50, 74, 139);
 void setup() {
   size(1000, 830);
   frameRate(30);
-  //font=loadFont("SegoeUI-75.vlw");
-  //textFont(font);  
+  font=loadFont("SegoeUI-75.vlw");
+  textFont(font);  
   
   play=loadImage("play.png");
   pause=loadImage("pause.png");
