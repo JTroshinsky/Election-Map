@@ -82,10 +82,10 @@ void setup() {
 void draw() {
    fill(255,0,0);
    ellipse(mouseX,mouseY,50,50);
-  if(auto)
-    timer();
-  else
-    slider();
+  //if(auto)
+    //timer();
+  //else
+    //slider();
   fill(0,255,0);
    ellipse(mouseX,mouseY,50,50);
   drawMap(); 
