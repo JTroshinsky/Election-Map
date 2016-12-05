@@ -105,7 +105,7 @@ public void timer(){
 
 public void slider(){
   if(mousePressed&&mouseY>700&&mouseX>100&mouseX<900){
-     counter=((int)(mouseX-100))/30;
+     counter=(mouseX-100)/30;
      year=2012-4*counter;
   }  
 }
