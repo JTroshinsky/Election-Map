@@ -177,7 +177,7 @@ public void loadResults(){
 
 
 public void loadStates() {
-  map=loadShape("Blank_Map.svg");
+  map=loadShape("https://commons.wikimedia.org/wiki/File:Blank_US_Map_(states_only).svg#/media/File:Blank_US_Map_(states_only).svg",".svg");
 
   alabama=map.getChild("AL");
   alaska=map.getChild("AK");
