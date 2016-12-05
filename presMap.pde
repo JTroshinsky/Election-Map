@@ -80,7 +80,7 @@ void setup() {
 }
 
 void draw() {
-   fill(255,0,0);
+   fill(255,255,0);
    ellipse(mouseX,mouseY,50,50);
   //if(auto)
     //timer();
