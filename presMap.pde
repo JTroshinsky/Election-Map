@@ -56,7 +56,7 @@ PImage pause;
 
 ArrayList<state> states=new ArrayList<state>();
 int[][] results=new int[51][31];
-boolean auto=true;
+boolean auto=false;
 int counter=26;
 int timer=0;
 int year;
@@ -82,10 +82,10 @@ void setup() {
 void draw() {
    fill(255,255,0);
    ellipse(mouseX,mouseY,50,50);
-  //if(auto)
-    //timer();
-  //else
-    //slider();
+  if(auto)
+    timer();
+  else
+    slider();
   fill(0,255,0);
    ellipse(mouseX,mouseY,50,50);
   drawMap(); 
