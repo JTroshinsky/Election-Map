@@ -82,7 +82,7 @@ void setup() {
 void draw() {
    fill(255,255,0);
    ellipse(mouseX,mouseY,50,50);
-  if(auto)
+  if(auto==true)
     timer();
   else
     slider();
