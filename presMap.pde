@@ -58,7 +58,7 @@ ArrayList<state> states=new ArrayList<state>();
 int[][] results=new int[51][31];
 boolean auto=false;
 int counter=26;
-int timer=0;
+int timer=1;
 int year;
 PFont font;
 color red=color(195, 55, 77);
@@ -99,7 +99,7 @@ public void timer(){
   if(counter<0){
     counter=26;
   }    
-  year=2012-(int)((int)(4*counter/30)*30);
+  year=2012-4*counter;
   timer++;
 }
 
