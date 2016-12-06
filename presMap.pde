@@ -98,7 +98,7 @@ public void timer(){
     counter--;
   if(counter<0)
     counter=26;      
-  year=(int)(2012-(int)(4*counter));
+  year=2012-4*counter;
   //timer++;
 }
 
