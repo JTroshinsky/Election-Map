@@ -56,7 +56,7 @@ PImage pause;
 
 ArrayList<state> states=new ArrayList<state>();
 int[][] results=new int[51][31];
-boolean auto=false;
+boolean auto=true;
 int counter=26;
 int year=1908;
 PFont font;
