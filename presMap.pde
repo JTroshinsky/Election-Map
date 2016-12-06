@@ -82,22 +82,22 @@ void setup() {
 void draw() {
    fill(255,255,0);
    ellipse(mouseX,mouseY,25,25);
-  if(auto==true){
-    timers();}
-  else{
-    slider();}
+  if(auto==true)
+    timers();
+  else
+    slider();
   fill(0,255,0);
-  ellipse(mouseX,mouseY,25,25)
+  ellipse(mouseX,mouseY,25,25);
   drawMap(); 
   fill(0,0,255);
-  ellipse(mouseX,mouseY,25,25)
+  ellipse(mouseX,mouseY,25,25);
 }
 
 public void timers(){
-  if(millis()%500==0){
-    counter--;}
-  if(counter<0){
-    counter=26; }  
+  if(millis()%500==0)
+    counter--;
+  if(counter<0)
+    counter=26; 
   year=(int)(2012-(int)(4*counter));
   timer++;
 }
@@ -111,10 +111,10 @@ public void slider(){
 
 void mouseClicked(){
   if(mouseX>20&&mouseX<70&&mouseY>715){
-    if(auto){
-      auto=false;}
-    else{
-      auto=true;}
+    if(auto)
+      auto=false;
+    else
+      auto=true;
   }
 }
 
