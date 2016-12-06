@@ -150,6 +150,8 @@ public void drawMap(){
     image(pause,20,730);
    else  
      image(play,20,730);
+     
+   text(millis(),200,200);
 }
 
 public void findClosestPoint(PShape sShape){
