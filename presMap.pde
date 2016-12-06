@@ -150,12 +150,8 @@ public void drawMap(){
     image(pause,20,730);
    else  
      image(play,20,730);
-}
-
-public void findClosestPoint(PShape sShape){
-  
-    
-  
+     
+  text(millis(),200,200);
 }
 
 public void loadResults(){
@@ -171,8 +167,7 @@ public void loadResults(){
          results[x][numEntries]=1;       
        if(line[y].equals("R+"))         
          results[x][numEntries]=2;            
-       numEntries++; 
-       
+       numEntries++;        
      }
    }
   }
