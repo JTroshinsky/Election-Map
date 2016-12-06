@@ -83,7 +83,7 @@ void draw() {
    fill(255,255,0);
    ellipse(mouseX,mouseY,50,50);
   if(auto==true)
-    timer();
+    timers();
   else
     slider();
   fill(0,255,0);
@@ -93,7 +93,7 @@ void draw() {
    ellipse(mouseX,mouseY,50,50);
 }
 
-public void timer(){
+public void timers(){
   if(millis()%500==0)
     counter--;
   if(counter<0){
