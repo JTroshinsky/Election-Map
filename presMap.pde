@@ -80,25 +80,24 @@ void setup() {
 }
 
 void draw() {
-   fill(255,255,0);
-   ellipse(mouseX,mouseY,50,50);
+  fill(255,255,0);
+  ellipse(mouseX,mouseY,25,25);
   if(auto==true)
     timer();
   else
     slider();
   fill(0,255,0);
-   ellipse(mouseX,mouseY,50,50);
+  ellipse(mouseX,mouseY,25,25);
   drawMap(); 
   fill(0,0,255);
-   ellipse(mouseX,mouseY,50,50);
+  ellipse(mouseX,mouseY,25,25);
 }
 
 public void timer(){
   if(millis()%500==0)
     counter--;
-  if(counter<0){
-    counter=26;
-  }    
+  if(counter<0)
+    counter=26;      
   year=(int)(2012-(int)(4*counter));
   timer++;
 }
