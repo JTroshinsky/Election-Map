@@ -81,32 +81,30 @@ void setup() {
 
 void draw() {
    fill(255,255,0);
-   ellipse(mouseX,mouseY,50,50);
+   ellipse(mouseX,mouseY,25,25);
   if(auto==true)
     timers();
   else
     slider();
   fill(0,255,0);
-   ellipse(mouseX,mouseY,50,50);
+  ellipse(mouseX,mouseY,25,25)
   drawMap(); 
   fill(0,0,255);
-   ellipse(mouseX,mouseY,50,50);
+  ellipse(mouseX,mouseY,25,25)
 }
 
 public void timers(){
   if(millis()%500==0)
     counter--;
-  if(counter<0){
-    counter=26;
-  }    
+  if(counter<0)
+    counter=26;   
   year=(int)(2012-(int)(4*counter));
   timer++;
 }
 
 public void slider(){
   if(mousePressed&&mouseY>700&&mouseX>100&mouseX<900){
-     counter=(int)((int)(mouseX-100)/(int)30);
-     
+     counter=(int)((int)(mouseX-100)/(int)30);     
   }  
   year=2012-4*counter;
 }
@@ -151,12 +149,6 @@ public void drawMap(){
     image(pause,20,730);
    else  
      image(play,20,730);
-}
-
-public void findClosestPoint(PShape sShape){
-  
-    
-  
 }
 
 public void loadResults(){
