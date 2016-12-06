@@ -144,18 +144,12 @@ public void drawMap(){
     if(results[x][counter]==2)
       fill(red);
      shape(states.get(x).getShape(),0,0);
-     findClosestPoint(states.get(x).getShape());
+
   }
   if(auto)
     image(pause,20,730);
    else  
      image(play,20,730);
-}
-
-public void findClosestPoint(PShape sShape){
-  
-    
-  
 }
 
 public void loadResults(){
@@ -171,8 +165,7 @@ public void loadResults(){
          results[x][numEntries]=1;       
        if(line[y].equals("R+"))         
          results[x][numEntries]=2;            
-       numEntries++; 
-       
+       numEntries++;        
      }
    }
   }
@@ -291,7 +284,6 @@ class state {
   private PShape shape;
   private String name;
   private String abbreviation;
-
 
   public state(PShape stateShape,int num){
     String[] states=loadStrings("states.txt");    
