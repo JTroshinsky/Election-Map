@@ -57,9 +57,9 @@ PImage pause;
 ArrayList<state> states=new ArrayList<state>();
 int[][] results=new int[51][31];
 boolean auto=false;
-int counter=25;
-int timer=1;
-int year=2012;
+int counter=26;
+int timer=0;
+int year=1908;
 PFont font;
 color red=color(195, 55, 77);
 color blue=color(50, 74, 139);
@@ -99,15 +99,16 @@ public void timer(){
   if(counter<0){
     counter=26;
   }    
-  year=2012-(4*counter);
+  year=(int)(2012-(int)(4*counter));
   timer++;
 }
 
 public void slider(){
   if(mousePressed&&mouseY>700&&mouseX>100&mouseX<900){
      counter=(int)((int)(mouseX-100)/(int)30);
-     year=2012-4*counter;
+     
   }  
+  year=2012-4*counter;
 }
 
 void mouseClicked(){
