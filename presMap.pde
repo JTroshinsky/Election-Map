@@ -94,7 +94,7 @@ void draw() {
 }
 
 public void timer(){
-  if(millis()+1%500==0)
+  if(millis()%500==0)
     counter--;
   if(counter<0){
     counter=26;
@@ -150,8 +150,6 @@ public void drawMap(){
     image(pause,20,730);
    else  
      image(play,20,730);
-     
-   text(millis(),200,200);
 }
 
 public void findClosestPoint(PShape sShape){
