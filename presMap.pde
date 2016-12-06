@@ -99,7 +99,7 @@ public void timer(){
   if(counter<0){
     counter=26;
   }    
-  year=2012-4*counter;
+  year=2012-(4*counter);
   timer++;
 }
 
