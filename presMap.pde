@@ -58,7 +58,6 @@ ArrayList<state> states=new ArrayList<state>();
 int[][] results=new int[51][31];
 boolean auto=false;
 int counter=26;
-//int timer=0;
 int year=1908;
 PFont font;
 color red=color(195, 55, 77);
@@ -94,12 +93,11 @@ void draw() {
 }
 
 public void timer(){
-  if(millis()%500==0)
+  if(millis()%15==0)
     counter--;
   if(counter<0)
     counter=26;      
   year=2012-4*counter;
-  //timer++;
 }
 
 public void slider(){
