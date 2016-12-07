@@ -87,7 +87,7 @@ void draw() {
 }
 
 public void timer(){
-  if(millis()%60==0)
+  if(millis()%15==0)
     counter--;
   if(counter<0)
     counter=26;      
