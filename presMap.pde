@@ -83,6 +83,7 @@ void draw() {
     timer();
   else
     slider();
+  text(frameCount,0,0);
   drawMap(); 
 }
 
